@@ -1,0 +1,10 @@
+h3 以下の内容で投稿する。
+
+= form_with(model: @post, local: true) do |form|
+  =form.hidden_field :content
+
+  p = @post.content
+  = form.submit "投稿する"
+  = form.submit "戻る", name: "back"
+
+= link_to "戻る", :back
