@@ -1,0 +1,16 @@
+= form_with(model: @post, local: true) do |form|
+  - if @post.errors.any?
+    #error_explanation
+      h2
+        = @post.errors.count
+        | 件のエラーがあります。
+      ul
+        - @post.errors.full_messages.each do |msg|
+          li = msg
+
+  .post_content
+    = form.label :content
+    = form.text_field :content
+  = form.submit
+  br
+  = link_to "一覧へ行く", posts_path
