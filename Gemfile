@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # gem 'mini_magick', '~> 4.8'
 
@@ -45,3 +45,4 @@ gem 'slim-rails'
 gem 'html2slim'
 gem 'kaminari'
 gem 'bootstrap'
+gem 'ransack'
