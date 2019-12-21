@@ -1,0 +1,7 @@
+h1 新規登録
+
+= form_with(model: @post) do |form|
+  .post_content
+    = form.label :content
+    = form.text_field :content
+  = form.submit
