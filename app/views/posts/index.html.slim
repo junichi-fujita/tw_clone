@@ -6,6 +6,7 @@ table
       td = post.content
       td = link_to "編集する", edit_post_path(post.id)
       td = link_to "削除する", post_path(post.id), method: :delete, data: {confirm: '本当に削除していいですか？'}
+br
 .mb-3
   = paginate @posts
   = page_entries_info @posts
