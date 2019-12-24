@@ -30,11 +30,11 @@ class Admin::UsersController < ApplicationController
     else
       render :edit
     end
+  end
 
-    def destroy
+  def destroy
       @user.destroy
-      redirect_to admin_user_url, notice: "ユーザー「#{@user.name}」を削除しました。"
-    end
+      redirect_to admin_users_url, notice: "ユーザー「#{@user.name}」を削除しました。"
   end
 
   private
